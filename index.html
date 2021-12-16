@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+</head>
+<body>
+    <div class="back">
+        <div id="backTitle" class="noselect">Library</div>
+        <div id="backCredit" class="noselect">From the Odin Project</div>
+
+        <div class="books"></div>
+
+        <div class="form hide">
+            <form action="">
+                <div>
+                    <label for="title">Title:</label>
+                    <input type="text" name="title" id="title" required>
+                </div>
+                <div>
+                    <label for="author">Author:</label>
+                    <input type="text" name="author" id="author" required>
+                </div>
+                <div>
+                    <label for="page">Page:</label>
+                    <input type="text" name="page" id="page" required>
+                </div>
+                <div>
+                    <label for="id">Id:</label>
+                    <input type="text" name="id" id="id" required>
+                </div>
+                <div>
+                    <label for="read">Read:</label>
+                    <input type="checkbox" name="read" id="read">
+                </div>
+            </form>
+            <div class="button">
+                <button id="submit">Submit</button>
+                <button id="close" onclick="closeForm()">Close</button>
+            </div>
+        </div>
+
+        <div class="update_form hide">
+            <form action="">
+                <div>
+                    <label for="title">Title:</label>
+                    <input type="text" name="title" id="title" required>
+                </div>
+                <div>
+                    <label for="author">Author:</label>
+                    <input type="text" name="author" id="author" required>
+                </div>
+                <div>
+                    <label for="page">Page:</label>
+                    <input type="text" name="page" id="page" required>
+                </div>
+                <div>
+                    <label for="id">Id:</label>
+                    <input type="text" name="id" id="id" required readonly>
+                </div>
+                <div>
+                    <label for="read">Read:</label>
+                    <input type="checkbox" name="read" id="read">
+                </div>
+            </form>
+            <div class="button">
+                <button id="update">Update</button>
+                <button id="close" onclick="closeUpdate()">Close</button>
+            </div>
+        </div>
+        
+        <div class="control">
+            <button id="add">Add</button>
+        </div>
+        <br><br><br>
+    </div>
+
+
+    <script src="main.js"></script>
+
+</body>
+</html>
