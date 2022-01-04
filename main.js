@@ -134,7 +134,7 @@ function showBook(){
                 </div>`
     })
     removeBtns = document.querySelectorAll('.remove')
-    console.log(removeBtns);
+    // console.log(removeBtns);
 
 }
 addBtn.addEventListener("click", ()=>{
@@ -155,8 +155,8 @@ submit.addEventListener('click', ()=>{
     else {
         let book = new Book(idForm.value, titleForm.value, authorForm.value, pageForm.value, readForm.checked)
         library.addBook(book)
-        console.log(book);
-        console.log(library);
+        // console.log(book);
+        // console.log(library);
         form.classList.add('hide')
         saveLocal()
         loadLocal()
@@ -167,7 +167,7 @@ submit.addEventListener('click', ()=>{
 function clickRemoveBtn(id){
     // console.log(id);
     let idbook = id.substring(0, id.length-7)
-    console.log(idbook);
+    // console.log(idbook);
     library.removeBook(idbook)
     saveLocal()
     loadLocal()
